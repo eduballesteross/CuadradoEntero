@@ -1,5 +1,6 @@
 ﻿
 using CuadradoEntero.Servicios;
+using System.Reflection.Metadata.Ecma335;
 
 namespace CuadradoEntero.Contraladores
 {
@@ -18,6 +19,21 @@ namespace CuadradoEntero.Contraladores
         public static void Main(string[] args)
         {
 
+            MenuInterfaz menuInterfaz = new MenuImplementacion();
+            OperacionesInterfaz operacionInterfaz = new OperacionesImplementacion();
+
+            int opcionSeleccion;
+           
+
+            opcionSeleccion = menuInterfaz.MostrarYRecogerSeleccion();
+
+            double raizCuadrada = (int)Math.Sqrt(opcionSeleccion);
+           
+
+            Console.WriteLine(raizCuadrada);  
         }
+
+         
+        
     }
 }
