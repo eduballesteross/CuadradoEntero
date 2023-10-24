@@ -30,10 +30,10 @@ namespace CuadradoEntero.Contraladores
 
             raizCuadrada = operacionInterfaz.RaizCuadrada(opcionSeleccion);
 
+
            if (raizCuadrada * raizCuadrada == opcionSeleccion)
             {
                 Console.WriteLine("El cuadrado perfecto de " + opcionSeleccion + " es " + raizCuadrada + " elevado a " + raizCuadrada);
-
             }
             else
             {
