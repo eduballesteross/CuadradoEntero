@@ -23,15 +23,22 @@ namespace CuadradoEntero.Contraladores
             OperacionesInterfaz operacionInterfaz = new OperacionesImplementacion();
 
             int opcionSeleccion;
-           
+
+            double raizCuadrada;
 
             opcionSeleccion = menuInterfaz.MostrarYRecogerSeleccion();
 
-            double raizCuadrada = Math.Sqrt(opcionSeleccion);
+            raizCuadrada = operacionInterfaz.RaizCuadrada(opcionSeleccion);
 
-            Console.WriteLine(raizCuadrada);
-           
-             
+           if (raizCuadrada * raizCuadrada == opcionSeleccion)
+            {
+                Console.WriteLine("El cuadrado perfecto de " + opcionSeleccion + " es " + raizCuadrada + " elevado a " + raizCuadrada);
+
+            }
+            else
+            {
+                Console.WriteLine("El número " + opcionSeleccion + " no tiene un cuadrado perfecto");
+            }
         }
 
          

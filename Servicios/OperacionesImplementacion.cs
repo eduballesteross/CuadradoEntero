@@ -6,12 +6,19 @@ using System.Threading.Tasks;
 
 namespace CuadradoEntero.Servicios
 {
+
     internal class OperacionesImplementacion : OperacionesInterfaz
+
     {
-        public int RaizCuadrada()
+
+        public double RaizCuadrada(int opcionSeleccion)
         {
-            
-           
+
+            double raizCuadrada = Math.Sqrt(opcionSeleccion);
+
+            Console.WriteLine(raizCuadrada);
+
+            return raizCuadrada  ;
 
         }
     }

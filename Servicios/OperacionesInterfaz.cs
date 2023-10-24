@@ -9,8 +9,7 @@ namespace CuadradoEntero.Servicios
     internal interface OperacionesInterfaz
     {
 
-        public int RaizCuadrada();
-
-       
+        public double RaizCuadrada(int opcionSeleccion);
+        
     }
 }

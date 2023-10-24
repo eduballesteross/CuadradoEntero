@@ -12,7 +12,7 @@ namespace CuadradoEntero.Servicios
         {
             int opcionSeleccion;
 
-            Console.WriteLine("Introduzca un número para conocer si el número se puede expresar como el cuadrado de otro número entero");
+            Console.WriteLine("Introduzca un número para conocer si el número introducido se puede expresar como el cuadrado de otro número entero: ");
             opcionSeleccion = Convert.ToInt32(Console.ReadLine());
             return opcionSeleccion;
 
