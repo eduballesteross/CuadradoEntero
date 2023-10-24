@@ -27,10 +27,11 @@ namespace CuadradoEntero.Contraladores
 
             opcionSeleccion = menuInterfaz.MostrarYRecogerSeleccion();
 
-            double raizCuadrada = (int)Math.Sqrt(opcionSeleccion);
-           
+            double raizCuadrada = Math.Sqrt(opcionSeleccion);
 
-            Console.WriteLine(raizCuadrada);  
+            Console.WriteLine(raizCuadrada);
+           
+             
         }
 
          
